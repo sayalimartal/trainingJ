@@ -17,7 +17,7 @@ public class TriangleCheckTest {
 		{
 			triangle[i]=new Triangle();
 			
-			System.out.println("Enter the sides of the triangle");
+			System.out.println("Enter the sides of triangle "+(i+1));
 			for(int j=0;j<3;j++)
 				side1[i][j]=sc.nextInt();
 			triangle[i].setSide(side1[i]);
@@ -31,7 +31,7 @@ public class TriangleCheckTest {
 			else
 			{
 				if(triangle[i].isRight(triangle[i])==true)
-					System.out.println(" is a right angle triangle");
+					System.out.println(" is a right angled triangle");
 				else
 				{
 					if(triangle[i].isIsosceles(triangle[i])==true)
